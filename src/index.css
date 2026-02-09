@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-fusione-gray-dark;
+  }
+
+  body {
+    @apply bg-fusione-black text-white font-inter m-0 min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-fusione-lime text-fusione-black px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-secondary {
+    @apply bg-fusione-gray-dark text-white px-6 py-3 rounded-lg font-semibold hover:bg-fusione-gray transition-all;
+  }
+
+  .card {
+    @apply bg-fusione-gray-dark border border-fusione-gray rounded-lg p-6 hover:border-fusione-lime transition-all;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B3A4A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8FD400;
+  border-radius: 5px;
+}
+
+mark {
+  background-color: #8FD400;
+  color: #0F172A;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+pre {
+  @apply bg-fusione-gray-dark border border-fusione-gray rounded-lg p-4 overflow-x-auto;
+}
+
+code {
+  @apply text-fusione-lime font-mono text-sm;
+}
+
+a {
+  @apply text-fusione-lime hover:underline transition-all;
+}
